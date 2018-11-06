@@ -2,10 +2,11 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 # Declare the library
 add_library(${PROJECT_NAME} STATIC
-        pocket.cpp
+        fibonacci.cpp
         )
+        
 set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER
-        "${PROJECT_SOURCE_DIR}/include/pocket.hxx")
+        "${PROJECT_SOURCE_DIR}/include/fibonacci.h")
 
 # Specify here the include directories exported by this library
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
